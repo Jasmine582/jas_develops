@@ -145,7 +145,7 @@ textarea {
     margin: 50px 0;
   }
   
-   /* ==========Header=============== */
+   /* ==Header== */
 /* Nav bar */
 .topnav a.active {
   background-color: inherit;
@@ -175,6 +175,7 @@ textarea {
 .topnav .icon {
   display: none;
 }
+/*==hero area==*/
  .hero img {
   opacity: 0.5;
   display: flex;
@@ -201,17 +202,16 @@ textarea {
  background-color: #f19494;
  padding: 2em;
  margin-left: 1.2em;
- box-shadow: 20px 15px 5px 5px #6e695e ; /*#453e4f*/
+ box-shadow: 20px 15px 5px 5px #6e695e ; 
  margin-top: 2.5em;
 }
-/*==========Projects==================*/
+/*==Projects==*/
 #projects {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
 }
-
 #projects h2 {
   display: flex;
  margin-top: 3.5em;
@@ -247,7 +247,6 @@ textarea {
 .project-button {
   margin: 2.2em 0em 4em 5.9em;
 }
-
 .project-button a {
   border: solid #6e695e;
  font-size: 25px;
@@ -255,15 +254,65 @@ textarea {
   box-shadow: 10px 4px #6e695e;
   background-color: #f19494;
 }
-
 .project-button a:hover {
   background-color:#6e695e;
   color:#f19494;
   box-shadow: 12px 15px 2px 1px #f19494 ; 
 }
-
-
-
+/*==Skills==*/
+#skills  {
+ background-color: #d1cdc5; 
+margin-top: -3.5em;
+}
+#skills h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  color:#453e4f; 
+  text-shadow: 2px 1px #f19494; 
+  font-weight: 800;
+  margin-bottom: -20px;
+}
+#skills i, #skills h6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+ .skill-items{
+  display: grid;
+  margin-left:1em;
+  grid-template-columns: repeat(2, 1fr);
+}
+.fontawesome-icon i {
+  font-size: 3.5em;
+  color:  #453E4F;
+  text-shadow:2px 3px #f19494;
+}
+.skill-item-description {
+  font-size: 1.3em;
+}
+/*==about==*/
+#about {
+display: grid;
+}
+#about h2 {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+#about figure {
+  width: 46%;
+  box-shadow: 17px -14px 4px 3px #f19494;
+  margin-left: 7em;
+  margin-bottom: 3em;
+}
+#about p {
+  margin-left: 2.3em;
+ line-height: 1.4em;
+ font-size: 1.1em;
+ color:#453e4f; 
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -383,6 +432,7 @@ textarea {
       text-align: left;
     }
   }
+   /* tablet screens */
   @media only screen and (min-width:768px) {
     header .wrapper {
       max-width: 640px;
@@ -410,7 +460,6 @@ textarea {
     margin-top: -7em;
     margin-bottom: 2.5em;
     font-size: 3em;
-    
   }
 .hero p {
   padding: 3em;
@@ -423,7 +472,6 @@ textarea {
   grid-template-columns: repeat(2, 1fr);
   gap: 5em;
 }
-
 
 .project-card {
   flex-flow: row wrap;
@@ -438,9 +486,28 @@ textarea {
 .project-button {
   margin-left: 4em ;
 }
-
-
+.skill-items{
+  margin-left: 4em;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   }
+ #about div {
+ display: flex;
+ margin-left: 3rem;
+ justify-content: center;
+ align-items: center;
+  }
+#about figure {
+  width: 80%;
+  margin-left: 2em;
+}
+#about p {
+  font-size: 1.5em;
+  line-height: 1.6em;
+}
+
+}
+   /* laptop screens */
   @media only screen and (min-width: 1280px) {
    .wrapper {
       max-width: 960px;
@@ -465,17 +532,15 @@ textarea {
   }
   .project-card img {
     margin-top: 5em;
-    width: 18em;
+    width: 20em;
   }
 
   .project-card .moi-img  {
-    height: 25vh;
-    
+    height: 35vh;
   }
 
   #projects .wrapper  {
     grid-template-columns: repeat(3, 300px);
-  
   }
 
   #middle-row,
@@ -488,7 +553,27 @@ textarea {
 #last-row .project-button {
   margin-left: 2em;
 }
+#skills {
+  padding: 60px;
 }
+#skills h2 {
+  margin-top: -40px;
+  margin-bottom: 2em;
+}
+.skill-items{
+  grid-template-columns: repeat(4, 1fr);
+  width: 110%;
+  gap: 5em;
+  }
+#about h2{
+  padding:1.3em;
+}
+#about figure {
+  margin-top: 3em;
+}
+
+}
+ /* bigger screens */
   @media screen and (min-width:1700px){
     .topnav a.active  {
       margin-right: 34.8em;
@@ -500,6 +585,11 @@ textarea {
       margin-top: 20.5em;
       margin-left: 14em;
     }
+
+  .skill-items{
+    margin-left: 24em;
+  }
+
   }
   
 @media print,
