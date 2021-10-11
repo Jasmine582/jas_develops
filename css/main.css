@@ -313,6 +313,130 @@ display: grid;
  font-size: 1.1em;
  color:#453e4f; 
 }
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+  background-color:#453e4f;
+  color: #d1cdc5; 
+  padding: 16px 20px;
+  border: none;
+  border-radius: 5%;
+  cursor: pointer;
+  opacity: 0.8;
+  /* position: fixed; */
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+  font-size: 20px;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 1px; /*15px*/
+  border: 3px solid #f19494;
+  z-index: 9; 
+}
+
+/* Add styles to the form container */
+.form-container {
+ max-width: 400px; /*300px*/
+  padding: 30px; /*10px*/
+  background-color: #d1cdc5;
+}
+.form-container h2 {
+  padding: 1em;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=email],
+textarea {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1; 
+}
+
+/* When the inputs get focus, do something */
+/* .form-container input[type=text]:focus,
+.form-container input[type=email]:focus {
+  background-color: #453e4f;
+  outline: none;
+  color:ivory;
+} */
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+  background-color: #453e4f;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  margin-left: 20%;
+  margin-bottom:10px;
+  opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+  background-color: #f19494;
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+.bt{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -4%;
+}
+
+footer .icons {
+  font-size: 1.5em;
+  background-color: #d1cdc5; 
+  padding: 1.2em;
+  box-shadow: -20px 15px 5px 5px #f19494;
+  margin-top: 2.5em;
+  margin-bottom: 2em;
+  margin-left: 3em;
+}
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.icons p  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#453e4f;
+  border-radius:50% ;
+  height: 40px;
+  width: 40px;
+}
+.icons i {
+  color: #FFE8D6;
+}
+
+.copyright {
+  display: flex;
+text-align: center;
+justify-content: center;
+align-items: center;
+margin-left: 6em;
+margin-top:1em;
+margin-bottom: -8em;
+  color:#453E4F;
+font-size: 12px;
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -440,6 +564,7 @@ display: grid;
       width: 100%;
       justify-content: space-between;
     }
+
     .topnav  {
       display:flex;
       justify-content: flex-end;
@@ -449,7 +574,8 @@ display: grid;
       font-size: 1.3rem;
     }
     .topnav a.active  {
-    margin-right: 6.7em;
+    margin-top: -6px;
+    margin-right: 5.7em;
     font-size: 1.7em;
   }
   .hero img {
@@ -462,7 +588,7 @@ display: grid;
     font-size: 3em;
   }
 .hero p {
-  padding: 3em;
+  padding: 2em;
   margin-left: 8em;
   font-size:1.625em;
 }
@@ -491,6 +617,7 @@ display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   }
+  
  #about div {
  display: flex;
  margin-left: 3rem;
@@ -498,12 +625,24 @@ display: grid;
  align-items: center;
   }
 #about figure {
-  width: 80%;
-  margin-left: 2em;
+  width: 73vw;
+  margin-left: 1em;
+  
+}
+#about h2 {
+  margin-bottom: 1em;
 }
 #about p {
-  font-size: 1.5em;
   line-height: 1.6em;
+  margin-top: -4em;
+  margin-left: 1em;
+}
+footer .icons {
+  margin-left: 5em;
+}
+.open-button {
+  margin-top: -6em;
+  margin-left: 14em;
 }
 
 }
@@ -512,15 +651,15 @@ display: grid;
    .wrapper {
       max-width: 960px;
     }
-    .topnav {
+    .topnav  {
       font-size: 1.125em;
     }
     .topnav a.active  {
-      margin-right: 16.8em;
+      margin-top: -15px;
+      margin-right: 16em;
       padding: .5em;
       font-size: 2em;
     }
-  
     .hero h1 {
     margin-top: -11.5em;
     font-size: 3.5em;
@@ -540,18 +679,19 @@ display: grid;
   }
 
   #projects .wrapper  {
+    margin-right: 8em;
     grid-template-columns: repeat(3, 300px);
   }
 
   #middle-row,
   #last-row {
     margin-top: -5em;
-    margin-left: 11em;
+    margin-left: 10em;
     }
 
 #middle-row .project-button,
 #last-row .project-button {
-  margin-left: 2em;
+  margin-left: 4em;
 }
 #skills {
   padding: 60px;
@@ -566,10 +706,24 @@ display: grid;
   gap: 5em;
   }
 #about h2{
-  padding:1.3em;
+  margin-top:1.3em;
 }
 #about figure {
   margin-top: 3em;
+  margin-left: 8em;
+  width: 60vw;
+}
+#about p {
+  margin-left: 2em;
+}
+footer  {
+  margin-left: 8em;
+}
+.open-button {
+  margin-top: -15em;
+}
+.form-popup {
+  right: 1px; 
 }
 
 }

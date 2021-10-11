@@ -7,3 +7,11 @@ function myFunction () {
         x.className = "topnav";
     }
 };
+//contact form
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
+  }
+  
+  function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+  }
