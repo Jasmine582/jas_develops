@@ -538,7 +538,7 @@ font-size: 12px;
    Modify as content requires.
    ========================================================================== */
  /* smaller screens */
- @media screen and (min-width:100px) and (max-width: 375px) {
+ @media screen and  (max-width: 400px) {
   .hero h1 {
     margin-top: -7.5em;
     margin-bottom: 4em;
@@ -548,13 +548,14 @@ font-size: 12px;
   margin-top: -1.2em;
  }
  #contact {
-  top:984%;
+  top:990%;
   left:43%;
 }
  .popup.active {
   top:950%;
 }
 }
+
    @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
     .topnav a.icon {
@@ -660,8 +661,7 @@ font-size: 12px;
 }
 
 #contact {
-  top:525%;
-  left:65%;
+  margin-top:-232em;
 }
 .popup.active {
   top:500%;
@@ -671,11 +671,11 @@ footer .icons {
   margin-left: 5em;
 }
 }
-@media only screen and (min-width:1024px) {
+/* @media only screen and (min-width:1024px) {
   #contact button {
   margin-top: 1300%;
 }
-}
+} */
    /* laptop screens */
   @media only screen and (min-width: 1280px) {
    .wrapper {
@@ -750,11 +750,12 @@ footer .icons {
 footer  {
   margin-left: 8em;
 }
-#contact button {
-  margin-top: 130em;
+#contact {
+  margin-top:-64em;
 }
+
 .popup.active {
-  margin-top: 94%;
+  margin-top: 94%; 
 }
   }
 
@@ -786,7 +787,7 @@ footer  {
     padding: 2em;
   }
   #contact button {
-margin-top: 250%;
+   margin-top: 250%;
   }
   .popup.active {
     margin-top: 19%;
