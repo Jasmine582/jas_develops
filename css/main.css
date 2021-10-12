@@ -313,8 +313,15 @@ display: grid;
  font-size: 1.1em;
  color:#453e4f; 
 }
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
+/*==contact form==*/
+#contact {
+  position:absolute;
+  top:893%;
+  left:45%;
+  transform:translate(-50%,-50%);
+}
+
+#contact button {
   background-color:#453e4f;
   color: #d1cdc5; 
   padding: 16px 20px;
@@ -322,81 +329,87 @@ display: grid;
   border-radius: 5%;
   cursor: pointer;
   opacity: 0.8;
-  /* position: fixed; */
   bottom: 23px;
-  right: 28px;
+ margin-left: 68px;
   width: 280px;
   font-size: 20px;
 }
-
-/* The popup form - hidden by default */
-.form-popup {
-  display: none;
-  position: fixed;
-  bottom: 0;
-  right: 1px; /*15px*/
-  border: 3px solid #f19494;
-  z-index: 9; 
+.popup {
+  position:absolute;
+  top:-150%;
+  left:50%;
+  opacity:0;
+  transform:translate(-50%,-50%) scale(1.25);
+  width:320px; 
+  padding:20px 30px;
+  background:#d1cdc5; 
+  box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
+  border-radius:10px;
+  transition:top 0ms ease-in-out 200ms,
+             opacity 200ms ease-in-out 0ms,
+             transform 200ms ease-in-out 0ms; 
+}
+.popup.active {
+  top:867%;
+  opacity:1;
+  transform:translate(-50%,-50%) scale(1);
+  transition:top 0ms ease-in-out 0ms,
+             opacity 200ms ease-in-out 0ms,
+             transform 200ms ease-in-out 0ms;
+}
+.popup .close-btn {
+  position:absolute;
+  top:10px;
+  right:10px;
+  width:15px;
+  height:15px;
+  background:#453e4f; 
+  color:#eee;
+  text-align:center;
+  line-height:15px;
+  border-radius:15px;
+  cursor:pointer;
+}
+.popup form h2 {
+  text-align:center;
+  color:#453e4f; 
+  margin:10px 0px 20px;
+  font-size:25px;
+}
+.popup form .form-element {
+  margin:15px 0px;
+}
+.popup form .form-element label {
+  font-size:18px;
+  color:#453e4f; 
+}
+.popup form .form-element input[type="text"],
+.popup form .form-element input[type="email"], 
+.popup form .form-element textarea {
+  margin-top:5px;
+  display:block;
+  width:100%;
+  padding:10px;
+  outline:none;
+  border:1px solid #aaa;
+  border-radius:5px;
 }
 
-/* Add styles to the form container */
-.form-container {
- max-width: 400px; /*300px*/
-  padding: 30px; /*10px*/
-  background-color: #d1cdc5;
-}
-.form-container h2 {
-  padding: 1em;
-}
-
-/* Full-width input fields */
-.form-container input[type=text], .form-container input[type=email],
-textarea {
-  width: 90%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1; 
+.popup form .form-element button {
+  width:100%;
+  height:40px;
+  margin-top: 1rem;
+  margin-left: .5em;
+  border:none;
+  outline:none;
+  font-size:18px;
+  background:#F19494;
+  color:#453E4F;
+  border-radius:10px;
+  cursor:pointer;
 }
 
-/* When the inputs get focus, do something */
-/* .form-container input[type=text]:focus,
-.form-container input[type=email]:focus {
-  background-color: #453e4f;
-  outline: none;
-  color:ivory;
-} */
-
-/* Set a style for the submit/login button */
-.form-container .btn {
-  background-color: #453e4f;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 70%;
-  margin-left: 20%;
-  margin-bottom:10px;
-  opacity: 0.8;
-}
-
-/* Add a red background color to the cancel button */
-.form-container .cancel {
-  background-color: #f19494;
-}
-
-/* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
-  opacity: 1;
-}
-
-.bt{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: -4%;
-}
-
+/*==footer==*/
 footer .icons {
   font-size: 1.5em;
   background-color: #d1cdc5; 
@@ -426,14 +439,14 @@ footer .icons {
 }
 
 .copyright {
-  display: flex;
+display: flex;
 text-align: center;
 justify-content: center;
 align-items: center;
 margin-left: 6em;
 margin-top:1em;
 margin-bottom: -8em;
-  color:#453E4F;
+color:#453E4F;
 font-size: 12px;
 }
 
@@ -525,7 +538,7 @@ font-size: 12px;
    Modify as content requires.
    ========================================================================== */
  /* smaller screens */
- @media screen and (max-width: 375px) {
+ @media screen and (min-width:100px) and (max-width: 375px) {
   .hero h1 {
     margin-top: -7.5em;
     margin-bottom: 4em;
@@ -534,6 +547,13 @@ font-size: 12px;
  .hero p {
   margin-top: -1.2em;
  }
+ #contact {
+  top:984%;
+  left:43%;
+}
+ .popup.active {
+  top:950%;
+}
 }
    @media screen and (max-width: 600px) {
     .topnav a:not(:first-child) {display: none;}
@@ -575,9 +595,10 @@ font-size: 12px;
     }
     .topnav a.active  {
     margin-top: -6px;
-    margin-right: 5.7em;
+    margin-right: 5.7em; 
     font-size: 1.7em;
   }
+
   .hero img {
     margin-top: -6.2em;
     width: 99.9vw;
@@ -637,14 +658,23 @@ font-size: 12px;
   margin-top: -4em;
   margin-left: 1em;
 }
+
+#contact {
+  top:525%;
+  left:65%;
+}
+.popup.active {
+  top:500%;
+  left: 68%;
+}
 footer .icons {
   margin-left: 5em;
 }
-.open-button {
-  margin-top: -6em;
-  margin-left: 14em;
 }
-
+@media only screen and (min-width:1024px) {
+  #contact button {
+  margin-top: 1300%;
+}
 }
    /* laptop screens */
   @media only screen and (min-width: 1280px) {
@@ -716,21 +746,23 @@ footer .icons {
 #about p {
   margin-left: 2em;
 }
+
 footer  {
   margin-left: 8em;
 }
-.open-button {
-  margin-top: -15em;
+#contact button {
+  margin-top: 130em;
 }
-.form-popup {
-  right: 1px; 
+.popup.active {
+  margin-top: 94%;
 }
+  }
 
-}
  /* bigger screens */
+
   @media screen and (min-width:1700px){
     .topnav a.active  {
-      margin-right: 34.8em;
+      margin-right: 33.9em;
     }
     .hero h1 {
       margin-top: -16em;
@@ -743,9 +775,28 @@ footer  {
   .skill-items{
     margin-left: 24em;
   }
-
+  #about .wrapper {
+    max-width: 960px;
+    margin-left: 20em;
   }
-  
+  #about img {
+    max-width: 19vw;
+  }
+  #about p {
+    padding: 2em;
+  }
+  #contact button {
+margin-top: 250%;
+  }
+  .popup.active {
+    margin-top: 19%;
+  }
+
+ .copyright {
+    margin-left: 59em;
+  }
+  }
+
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),

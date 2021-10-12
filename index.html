@@ -150,35 +150,40 @@
     <figure>
       <img src="/img/jasmine.jpeg" alt="">
     </figure>
-  <div>
-    <p>Hi! I'm Jasmine. A Human Resources Technician turned Front-End Web Developer. I love to challenge myself by creating beautiful and functional websites.<br> I am passionate to turn my skills and life experiences into a career of  working with others to come up with creative solutions. <br>When I am not coding you will find me watching the NFL (Go Cowboys!), debating my Marvel theories (Really Loki!), or trying the latest food scene. <br>Thanks for visiting, my little corner of the internet. Feel free to contact me and <b>I am looking forward to working with you!</b></p>
+    <div>
+      <p>Hi! I'm Jasmine. A Human Resources Technician turned Front-End Web Developer. I love to challenge myself by creating beautiful and functional websites.<br> I am passionate to turn my skills and life experiences into a career of  working with others to come up with creative solutions. <br>When I am not coding you will find me watching the NFL (Go Cowboys!), debating my Marvel theories (Really Loki!), or trying the latest food scene. <br>Thanks for visiting, my little corner of the internet. Feel free to contact me and <b>I am looking forward to working with you!</b></p>
+    </div>
   </div>
-</div>
-<div class="bt" id="contact">
-  <button class="open-button" onclick="openForm()">Contact Me</button>
-  <div class="form-popup" id="myForm">
-    <form accept-charset="utf-8" action="https://formspree.io/f/mpzknyrr" method="post" class="form-container">
-      <h2>Let’s meet over coffee or Zoom!</h2>
-      <label><b>Full Name</b></label>
-      <input type="text" placeholder="Full Name" required="">
-      <label for="email-address"><b>Email Address</b></label>
-      <input type="email" 
-      name="_replyto"
-      id="email-address"
-      placeholder="Enter Email" 
-      required="">
-      <label for="message"><b>Message</b></label>
-      <textarea rows="5" name="message" id="message" placeholder="Type Your Message Here..." required=""></textarea>
-      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-      <button type="submit" class="btn">Submit</button>
-      <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-    </form>
-  </div>
-</div>
 </section>
   </main>
   <footer>
-    <div class="wrapper">
+
+      <div id="contact">
+        <button id="contact-me">Contact Me</button>
+      </div>
+      <div class="popup">
+          <div class="close-btn">&times;</div>
+          <form accept-charset="utf-8" action="https://formspree.io/f/mpzknyrr" method="post" >
+              <h2>Let’s meet over coffee or Zoom!</h2>
+              <div class="form-element">
+                <label><b>Full Name</b></label>
+                <input type="text" id="name" placeholder="Full Name" required="">
+              </div>
+              <div class="form-element">
+                <label for="email"><b>Email</b></label>
+                <input type="email" name="_replyto" id="email" placeholder="Enter Email" required="">
+              </div>
+              <div class="form-element">
+                <label for="message"><b>Message</b></label>
+                <textarea rows="5" name="message" id="message" placeholder="Type Your Message Here..." required=""></textarea>
+              </div>
+                <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+                <div class="form-element">
+                  <button>Submit</button>
+                </div>
+          </form>
+      </div> 
+      <div class="wrapper">
       <div class="icons">
         <p><a href="mailto:jasdevelops@gmail.com" target="_blank"><i class="far fa-envelope"></i></a></p>
         <p><a href="https://github.com/Jasmine582" target="_blank"><i class="fab fa-github-alt"></i></a></p>
