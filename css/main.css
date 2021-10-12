@@ -315,10 +315,11 @@ display: grid;
 }
 /*==contact form==*/
 #contact {
-  position:absolute;
-  top:893%;
-  left:45%;
-  transform:translate(-50%,-50%);
+  position:absolute; 
+  margin-top: -5em;
+  /* top:893%;
+  left:45%; */
+  /* transform:translate(-50%,-50%); */
 }
 
 #contact button {
@@ -547,10 +548,6 @@ font-size: 12px;
  .hero p {
   margin-top: -1.2em;
  }
- #contact {
-  top:990%;
-  left:43%;
-}
  .popup.active {
   top:950%;
 }
@@ -660,9 +657,10 @@ font-size: 12px;
   margin-left: 1em;
 }
 
-#contact {
-  margin-top:-232em;
-}
+/* #contact {
+margin-top: 272em;
+margin-left: 13em;
+} */
 .popup.active {
   top:500%;
   left: 68%;
@@ -671,11 +669,7 @@ footer .icons {
   margin-left: 5em;
 }
 }
-/* @media only screen and (min-width:1024px) {
-  #contact button {
-  margin-top: 1300%;
-}
-} */
+
    /* laptop screens */
   @media only screen and (min-width: 1280px) {
    .wrapper {
@@ -750,13 +744,7 @@ footer .icons {
 footer  {
   margin-left: 8em;
 }
-#contact {
-  margin-top:-64em;
-}
 
-.popup.active {
-  margin-top: 94%; 
-}
   }
 
  /* bigger screens */
@@ -786,9 +774,10 @@ footer  {
   #about p {
     padding: 2em;
   }
-  #contact button {
-   margin-top: 250%;
-  }
+#contact{
+margin-top: -13em;
+margin-left: 46em;
+}
   .popup.active {
     margin-top: 19%;
   }
