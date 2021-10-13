@@ -744,7 +744,9 @@ footer .icons {
 footer  {
   margin-left: 8em;
 }
-
+.popup.active {
+margin-top: 74em;
+}
   }
 
  /* bigger screens */
