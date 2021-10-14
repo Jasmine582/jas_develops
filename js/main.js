@@ -1,4 +1,3 @@
-// responsive nav bar
 function myFunction () {
     const x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
@@ -7,7 +6,6 @@ function myFunction () {
         x.className = "topnav";
     }
 };
-//contact form
 document.querySelector("#contact-me").addEventListener("click",function(){
     document.querySelector(".popup").classList.add("active");
   });
