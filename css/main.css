@@ -146,7 +146,6 @@ textarea {
   }
   
    /* ==Header== */
-/* Nav bar */
 .topnav a.active {
   background-color: inherit;
   color: #453e4f;
@@ -170,7 +169,14 @@ textarea {
   font-size: 17px;
 }
 .topnav a:hover {
-  text-decoration: underline;
+  text-shadow:2px 9px 7px #dfdbd4;
+}
+.topnav a.active:hover {
+  text-shadow: none;
+}
+.topnav a.contact:hover {
+color:#dad4e2;
+text-shadow: none;
 }
 .topnav .icon {
   display: none;
@@ -553,6 +559,7 @@ font-size: 12px;
     .topnav a.icon {
       float: right;
       display: block;
+      text-shadow: none;
     }
   }
   
