@@ -18,14 +18,14 @@ html {
 }
 
 /*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
+	 * Remove text-shadow in selection highlight:
+	 * https://twitter.com/miketaylr/status/12228805301
+	 *
+	 * Vendor-prefixed and regular ::selection selectors cannot be combined:
+	 * https://stackoverflow.com/a/16982510/7133471
+	 *
+	 * Customize the background color to match your design.
+	 */
 
 ::-moz-selection {
   background: #b3d4fc;
@@ -38,8 +38,8 @@ html {
 }
 
 /*
- * A better looking default horizontal rule
- */
+	 * A better looking default horizontal rule
+	 */
 
 hr {
   display: block;
@@ -51,10 +51,10 @@ hr {
 }
 
 /*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
+	 * Remove the gap between audio, canvas, iframes,
+	 * images, videos and the bottom of their containers:
+	 * https://github.com/h5bp/html5-boilerplate/issues/440
+	 */
 
 audio,
 canvas,
@@ -66,8 +66,8 @@ video {
 }
 
 /*
- * Remove default fieldset styles.
- */
+	 * Remove default fieldset styles.
+	 */
 
 fieldset {
   border: 0;
@@ -76,8 +76,8 @@ fieldset {
 }
 
 /*
- * Allow only vertical resizing of textareas.
- */
+	 * Allow only vertical resizing of textareas.
+	 */
 
 textarea {
   resize: vertical;
@@ -88,64 +88,62 @@ textarea {
 }
 
 /* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
-  /* General Styles */
-   
-  html {
-    font-size: 16px;
-  }
-   
-  body {
-    font-size: 1em;
-    text-align: left;
-  }
-   
-   
-  a {
-    color: #453e4f;
-    text-decoration: none;
-    font-family: 'Alike', serif;
-  }
-   h1,
-   h2,
-   h3,
-   h4,
-   h5,
-   h6{
-    font-family: 'Alike', serif;
-   }
-  h2 {
-    font-weight: 500;
-    font-size: 1.875em;
-    margin: 0;
-  }
-   
-  h3, 
-  h4,
-  h6 {
-    font-weight: 500;
-    font-size: 1.125em;
-    margin: 20px 0;
-  }
-   
-  p {
-    font-size: .875em;
-    line-height: 1.285;
-    font-family: 'Open Sans', sans-serif;
+		 Author's custom styles
+		 ========================================================================== */
+/* General Styles */
 
-  }
-   
-  img {
-   width: 100%;
-  }
-   
-  .wrapper {
-    width: 90%;
-    margin: 50px 0;
-  }
-  
-   /* ==Header== */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 1em;
+  text-align: left;
+}
+
+a {
+  color: #453e4f;
+  text-decoration: none;
+  font-family: "Alike", serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Alike", serif;
+}
+h2 {
+  font-weight: 500;
+  font-size: 1.875em;
+  margin: 0;
+}
+
+h3,
+h4,
+h6 {
+  font-weight: 500;
+  font-size: 1.125em;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 0.875em;
+  line-height: 1.285;
+  font-family: "Open Sans", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 50px 0;
+}
+
+/* ==Header== */
 .topnav a.active {
   background-color: inherit;
   color: #453e4f;
@@ -153,7 +151,7 @@ textarea {
 }
 .topnav a.contact {
   color: #453e4f;
-  text-shadow:2px 2px 7px #6e695e;
+  text-shadow: 2px 2px 7px #6e695e;
 }
 .topnav {
   overflow: hidden;
@@ -169,29 +167,29 @@ textarea {
   font-size: 17px;
 }
 .topnav a:hover {
-  text-shadow:2px 9px 7px #dfdbd4;
+  text-shadow: 2px 9px 7px #dfdbd4;
 }
 .topnav a.active:hover {
   text-shadow: none;
 }
 .topnav a.contact:hover {
-color:#dad4e2;
-text-shadow: none;
+  color: #dad4e2;
+  text-shadow: none;
 }
 .topnav .icon {
   display: none;
 }
 /*==hero area==*/
- .hero img {
+.hero img {
   opacity: 0.5;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  margin-top:-3.1em;
+  margin-top: -3.1em;
   width: 99vw;
- }
- .hero h1 {
-   margin-top: -7.2em;
+}
+.hero h1 {
+  margin-top: -7.2em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -199,17 +197,17 @@ text-shadow: none;
   margin-left: 1em;
   font-size: 2em;
   color: black;
-  text-shadow: 2px 1px #161414 ; 
- }
- 
+  text-shadow: 2px 1px #161414;
+}
+
 .hero p {
- font-size: 1.5em;
- color:rgba(4, 15, 75, 0.966);
- background-color: #f19494;
- padding: 2em;
- margin-left: 1.2em;
- box-shadow: 20px 15px 5px 5px #6e695e ; 
- margin-top: 2.5em;
+  font-size: 1.5em;
+  color: rgba(4, 15, 75, 0.966);
+  background-color: #f19494;
+  padding: 2em;
+  margin-left: 1.2em;
+  box-shadow: 20px 15px 5px 5px #6e695e;
+  margin-top: 2.5em;
 }
 /*==Projects==*/
 #projects {
@@ -220,7 +218,7 @@ text-shadow: none;
 }
 #projects h2 {
   display: flex;
- margin-top: 3.5em;
+  margin-top: 3.5em;
   justify-content: center;
   align-items: center;
 }
@@ -228,14 +226,14 @@ text-shadow: none;
   display: grid;
   grid-gap: 15px;
 }
-.project-card img{
- box-shadow: -12px -15px 12px 1px #f19494 ; 
+.project-card img {
+  box-shadow: -12px -15px 12px 1px #f19494;
 }
-.project-card .moi-img  {
-  box-shadow:12px -15px 12px 1px #6e695e;
+.project-card .moi-img {
+  box-shadow: 12px -15px 12px 1px #6e695e;
 }
 .project-card h3 {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5em;
@@ -246,7 +244,7 @@ text-shadow: none;
   font-weight: 300;
 }
 .skills,
-.tools  {
+.tools {
   font-weight: 400;
   font-style: italic;
 }
@@ -255,55 +253,61 @@ text-shadow: none;
 }
 .project-button a {
   border: solid #6e695e;
- font-size: 25px;
-  border-radius: .1px;
+  font-size: 25px;
+  border-radius: 0.1px;
   box-shadow: 10px 4px #6e695e;
   background-color: #f19494;
 }
 .project-button a:hover {
-  background-color:#6e695e;
-  color:#f19494;
-  box-shadow: 12px 15px 2px 1px #f19494 ; 
+  background-color: #6e695e;
+  color: #f19494;
+  box-shadow: 12px 15px 2px 1px #f19494;
 }
 /*==Skills==*/
-#skills  {
- background-color: #d1cdc5; 
-margin-top: -3.5em;
+#skills {
+  background-color: #d1cdc5;
+  margin-top: -3.5em;
+}
+#skills .wrapper {
+  margin-left: 0.5em;
 }
 #skills h2 {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  color:#453e4f; 
-  text-shadow: 2px 1px #f19494; 
+  color: #453e4f;
+  text-shadow: 2px 1px #f19494;
   font-weight: 800;
   margin-bottom: -20px;
 }
-#skills i, #skills h6 {
+#skills i,
+#skills h6 {
   display: flex;
   justify-content: center;
   align-items: center;
 }
- .skill-items{
+.skill-items {
   display: grid;
-  margin-left:1em;
+  margin-left: 1em;
   grid-template-columns: repeat(2, 1fr);
 }
 .fontawesome-icon i {
   font-size: 3.5em;
-  color:  #453E4F;
-  text-shadow:2px 3px #f19494;
+  color: #453e4f;
+  text-shadow: 2px 3px #f19494;
 }
 .skill-item-description {
   font-size: 1.3em;
 }
 /*==about==*/
 #about {
-display: grid;
+  display: grid;
+  margin-left: 0.5em;
 }
+
 #about h2 {
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
@@ -315,106 +319,104 @@ display: grid;
 }
 #about p {
   margin-left: 2.3em;
- line-height: 1.4em;
- font-size: 1.1em;
- color:#453e4f; 
+  line-height: 1.4em;
+  font-size: 1.1em;
+  color: #453e4f;
 }
 /*==contact form==*/
 #contact {
-  position:absolute; 
+  position: absolute;
   margin-top: -5em;
 }
 #contact button {
-  background-color:#453e4f;
-  color: #d1cdc5; 
+  background-color: #453e4f;
+  color: #d1cdc5;
   padding: 16px 20px;
   border: none;
   border-radius: 5%;
   cursor: pointer;
   opacity: 0.8;
   bottom: 23px;
- margin-left: 68px;
+  margin-left: 68px;
   width: 280px;
   font-size: 20px;
 }
 .popup {
-  position:absolute;
-  top:-150%;
-  left:50%;
-  opacity:0;
-  transform:translate(-50%,-50%) scale(1.25);
-  width:320px; 
-  padding:20px 30px;
-  background:#d1cdc5; 
-  box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
-  border-radius:10px;
-  transition:top 0ms ease-in-out 200ms,
-             opacity 200ms ease-in-out 0ms,
-             transform 200ms ease-in-out 0ms; 
+  position: absolute;
+  top: -150%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(1.25);
+  width: 320px;
+  padding: 20px 30px;
+  background: #d1cdc5;
+  box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  transition: top 0ms ease-in-out 200ms, opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
 }
 .popup.active {
-  top:867%;
-  opacity:1;
-  transform:translate(-50%,-50%) scale(1);
-  transition:top 0ms ease-in-out 0ms,
-             opacity 200ms ease-in-out 0ms,
-             transform 200ms ease-in-out 0ms;
+  top: 867%;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  transition: top 0ms ease-in-out 0ms, opacity 200ms ease-in-out 0ms,
+    transform 200ms ease-in-out 0ms;
 }
 .popup .close-btn {
-  position:absolute;
-  top:10px;
-  right:10px;
-  width:15px;
-  height:15px;
-  background:#453e4f; 
-  color:#eee;
-  text-align:center;
-  line-height:15px;
-  border-radius:15px;
-  cursor:pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  background: #453e4f;
+  color: #eee;
+  text-align: center;
+  line-height: 15px;
+  border-radius: 15px;
+  cursor: pointer;
 }
 .popup form h2 {
-  text-align:center;
-  color:#453e4f; 
-  margin:10px 0px 20px;
-  font-size:25px;
+  text-align: center;
+  color: #453e4f;
+  margin: 10px 0px 20px;
+  font-size: 25px;
 }
 .popup form .form-element {
-  margin:15px 0px;
+  margin: 15px 0px;
 }
 .popup form .form-element label {
-  font-size:18px;
-  color:#453e4f; 
+  font-size: 18px;
+  color: #453e4f;
 }
 .popup form .form-element input[type="text"],
-.popup form .form-element input[type="email"], 
+.popup form .form-element input[type="email"],
 .popup form .form-element textarea {
-  margin-top:5px;
-  display:block;
-  width:100%;
-  padding:10px;
-  outline:none;
-  border:1px solid #aaa;
-  border-radius:5px;
+  margin-top: 5px;
+  display: block;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: 1px solid #aaa;
+  border-radius: 5px;
 }
 .popup form .form-element button {
-  width:100%;
-  height:40px;
+  width: 100%;
+  height: 40px;
   margin-top: 1rem;
-  margin-left: .5em;
-  border:none;
-  outline:none;
-  font-size:18px;
-  background:#F19494;
-  color:#453E4F;
-  border-radius:10px;
-  cursor:pointer;
+  margin-left: 0.5em;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  background: #f19494;
+  color: #453e4f;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 /*==footer==*/
 footer .icons {
   font-size: 1.5em;
-  background-color: #d1cdc5; 
+  background-color: #d1cdc5;
   padding: 1.2em;
   box-shadow: -20px 15px 5px 5px #f19494;
   margin-top: 2.5em;
@@ -427,38 +429,38 @@ footer .icons {
   align-items: center;
 }
 
-.icons p  {
+.icons p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#453e4f;
-  border-radius:50% ;
+  background-color: #453e4f;
+  border-radius: 50%;
   height: 40px;
   width: 40px;
 }
 .icons i {
-  color: #FFE8D6;
+  color: #ffe8d6;
 }
 
 .copyright {
-display: flex;
-text-align: center;
-justify-content: center;
-align-items: center;
-margin-left: 6em;
-margin-top:1em;
-margin-bottom: -8em;
-color:#453E4F;
-font-size: 12px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: 6em;
+  margin-top: 1em;
+  margin-bottom: -8em;
+  color: #453e4f;
+  font-size: 12px;
 }
 
 /* ==========================================================================
-   Helper classes
-   ========================================================================== */
+		 Helper classes
+		 ========================================================================== */
 
 /*
- * Hide visually and from screen readers
- */
+	 * Hide visually and from screen readers
+	 */
 
 .hidden,
 [hidden] {
@@ -466,13 +468,13 @@ font-size: 12px;
 }
 
 /*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
+	 * Hide only visually, but have it available for screen readers:
+	 * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+	 *
+	 * 1. For long content, line feeds are not interpreted as spaces and small width
+	 *    causes content to wrap 1 word per line:
+	 *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+	 */
 
 .sr-only {
   border: 0;
@@ -488,10 +490,10 @@ font-size: 12px;
 }
 
 /*
- * Extends the .sr-only class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
+	 * Extends the .sr-only class to allow the element
+	 * to be focusable when navigated to via the keyboard:
+	 * https://www.drupal.org/node/897638
+	 */
 
 .sr-only.focusable:active,
 .sr-only.focusable:focus {
@@ -505,24 +507,24 @@ font-size: 12px;
 }
 
 /*
- * Hide visually and from screen readers, but maintain layout
- */
+	 * Hide visually and from screen readers, but maintain layout
+	 */
 
 .invisible {
   visibility: hidden;
 }
 
 /*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+	 * Clearfix: contain floats
+	 *
+	 * For modern browsers
+	 * 1. The space content is one way to avoid an Opera bug when the
+	 *    `contenteditable` attribute is included anywhere else in the document.
+	 *    Otherwise it causes space to appear at the top and bottom of elements
+	 *    that receive the `clearfix` class.
+	 * 2. The use of `table` rather than `block` is only necessary if using
+	 *    `:before` to contain the top-margins of child elements.
+	 */
 
 .clearfix::before,
 .clearfix::after {
@@ -535,67 +537,71 @@ font-size: 12px;
 }
 
 /* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
- /* smaller screens */
- @media screen and  (max-width: 400px) {
+		 EXAMPLE Media Queries for Responsive Design.
+		 These examples override the primary ('mobile first') styles.
+		 Modify as content requires.
+		 ========================================================================== */
+/* smaller screens */
+@media screen and (max-width: 400px) {
   .hero h1 {
     margin-top: -7.5em;
     margin-bottom: 4em;
     font-size: 1.625em;
   }
- .hero p {
-  margin-top: -1.2em;
- }
- .popup.active {
-  top:950%;
-}
-}
-
-   @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-      text-shadow: none;
-    }
+  .hero p {
+    margin-top: -1.2em;
   }
-  
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+  .popup.active {
+    top: 950%;
   }
-   /* tablet screens */
-  @media only screen and (min-width:768px) {
-    header .wrapper {
-      max-width: 640px;
-      margin: 100px 0;
-      width: 100%;
-      justify-content: space-between;
-    }
+}
 
-    .topnav  {
-      display:flex;
-      justify-content: flex-end;
-    }
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+    text-shadow: none;
+  }
+}
 
-    .topnav a {
-      font-size: 1.3rem;
-    }
-    .topnav a.active  {
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/* tablet screens */
+@media only screen and (min-width: 768px) {
+  header .wrapper {
+    max-width: 640px;
+    margin: 100px 0;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .topnav {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .topnav a {
+    font-size: 1.3rem;
+  }
+  .topnav a.active {
     margin-top: -6px;
-    margin-right: 5.7em; 
+    margin-right: 5.7em;
     font-size: 1.7em;
   }
 
@@ -608,81 +614,79 @@ font-size: 12px;
     margin-bottom: 2.5em;
     font-size: 3em;
   }
-.hero p {
-  padding: 2em;
-  margin-left: 8em;
-  font-size:1.625em;
-}
-#projects .wrapper  {
-  padding-left: 1em;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 5em;
-}
-
-.project-card {
-  flex-flow: row wrap;
-}
-.project-card img {
- margin-top: 5em;
-
-}
-.project-card .moi-img  {
-  height: 23vh;
-}
-.project-button {
-  margin-left: 4em ;
-}
-.skill-items{
-  margin-left: 4em;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  .hero p {
+    padding: 2em;
+    margin-left: 8em;
+    font-size: 1.625em;
   }
-  
- #about div {
- display: flex;
- margin-left: 3rem;
- justify-content: center;
- align-items: center;
+  #projects .wrapper {
+    padding-left: 1em;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5em;
   }
-#about figure {
-  width: 73vw;
-  margin-left: 1em;
-  
-}
-#about h2 {
-  margin-bottom: 1em;
-}
-#about p {
-  line-height: 1.6em;
-  margin-top: -4em;
-  margin-left: 1em;
+
+  .project-card {
+    flex-flow: row wrap;
+  }
+  .project-card img {
+    margin-top: 5em;
+  }
+  .project-card .moi-img {
+    height: 23vh;
+  }
+  .project-button {
+    margin-left: 4em;
+  }
+  .skill-items {
+    margin-left: 4em;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  #about div {
+    display: flex;
+    margin-left: 3rem;
+    justify-content: center;
+    align-items: center;
+  }
+  #about figure {
+    width: 73vw;
+    margin-left: 1em;
+  }
+  #about h2 {
+    margin-bottom: 1em;
+  }
+  #about p {
+    line-height: 1.6em;
+    margin-top: -4em;
+    margin-left: 1em;
+  }
+
+  .popup.active {
+    top: 500%;
+    left: 68%;
+  }
+  footer .icons {
+    margin-left: 5em;
+  }
 }
 
-.popup.active {
-  top:500%;
-  left: 68%;
-}
-footer .icons {
-  margin-left: 5em;
-}
-}
-
-   /* laptop screens */
-  @media only screen and (min-width: 1280px) {
-   .wrapper {
-      max-width: 960px;
-    }
-    .topnav  {
-      font-size: 1.125em;
-    }
-    .topnav a.active  {
-      margin-top: -15px;
-      margin-right: 16em;
-      padding: .5em;
-      font-size: 2em;
-    }
-    .hero h1 {
+/* laptop screens */
+@media only screen and (min-width: 1280px) {
+  .wrapper {
+    max-width: 960px;
+  }
+  .topnav {
+    font-size: 1.125em;
+  }
+  .topnav a.active {
+    margin-top: -15px;
+    margin-right: 16em;
+    padding: 0.5em;
+    font-size: 2em;
+  }
+  .hero h1 {
     margin-top: -11.5em;
     font-size: 3.5em;
   }
@@ -696,11 +700,11 @@ footer .icons {
     width: 20em;
   }
 
-  .project-card .moi-img  {
+  .project-card .moi-img {
     height: 35vh;
   }
 
-  #projects .wrapper  {
+  #projects .wrapper {
     margin-right: 8em;
     grid-template-columns: repeat(3, 300px);
   }
@@ -709,83 +713,86 @@ footer .icons {
   #last-row {
     margin-top: -5em;
     margin-left: 10em;
-    }
-
-#middle-row .project-button,
-#last-row .project-button {
-  margin-left: 4em;
-}
-#skills {
-  padding: 60px;
-}
-#skills h2 {
-  margin-top: -40px;
-  margin-bottom: 2em;
-}
-.skill-items{
-  grid-template-columns: repeat(4, 1fr);
-  width: 110%;
-  gap: 5em;
-  }
-#about h2{
-  margin-top:1.3em;
-}
-#about figure {
-  margin-top: 3em;
-  margin-left: 8em;
-  width: 60vw;
-}
-#about p {
-  margin-left: 2em;
-}
-
-footer  {
-  margin-left: 8em;
-}
-.popup.active {
-margin-top: 74em;
-}
   }
 
- /* bigger screens */
+  #middle-row .project-button,
+  #last-row .project-button {
+    margin-left: 4em;
+  }
+  #skills {
+    padding: 60px;
+  }
+  #skills h2 {
+    margin-top: -40px;
+    margin-bottom: 2em;
+  }
+  .skill-items {
+    grid-template-columns: repeat(4, 1fr);
+    width: 110%;
+    gap: 5em;
+  }
+  #about .wrapper {
+    margin-left: 5em;
+  }
+  #about h2 {
+    margin-top: 1.3em;
+  }
+  #about figure {
+    margin-top: 3em;
+    margin-left: 8em;
+    width: 60vw;
+  }
+  #about p {
+    margin-left: 2em;
+  }
 
-  @media screen and (min-width:1700px){
-    .topnav a.active  {
-      margin-right: 33.9em;
-    }
-    .hero h1 {
-      margin-top: -16em;
-    }
-    .hero p {
-      margin-top: 20.5em;
-      margin-left: 14em;
-    }
+  footer {
+    margin-left: 8em;
+  }
+  .popup.active {
+    margin-top: 74em;
+  }
+}
 
-  .skill-items{
+/* bigger screens */
+
+@media screen and (min-width: 1700px) {
+  .topnav a.active {
+    margin-right: 33.9em;
+  }
+  .hero h1 {
+    margin-top: -16em;
+  }
+  .hero p {
+    margin-top: 20.5em;
+    margin-left: 14em;
+  }
+
+  .skill-items {
     margin-left: 24em;
   }
   #about .wrapper {
-    max-width: 960px;
-    margin-left: 20em;
+    margin-left: 23em;
   }
+
   #about img {
     max-width: 19vw;
   }
   #about p {
     padding: 2em;
   }
-#contact{
-margin-top: -13em;
-margin-left: 46em;
-}
+  #contact {
+    margin-top: -13em;
+    margin-left: 50em;
+  }
   .popup.active {
     margin-top: 19%;
   }
 
- .copyright {
+  .copyright {
     margin-left: 59em;
   }
-  }
+}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
@@ -795,10 +802,10 @@ margin-left: 46em;
 }
 
 /* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   https://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+		 Print styles.
+		 Inlined to avoid the additional HTTP request:
+		 https://www.phpied.com/delay-loading-your-print-css/
+		 ========================================================================== */
 
 @media print {
   *,
@@ -825,9 +832,9 @@ margin-left: 46em;
   }
 
   /*
-   * Don't show links that are fragment identifiers,
-   * or use the `javascript:` pseudo protocol
-   */
+		 * Don't show links that are fragment identifiers,
+		 * or use the `javascript:` pseudo protocol
+		 */
   a[href^="#"]::after,
   a[href^="javascript:"]::after {
     content: "";
@@ -844,9 +851,9 @@ margin-left: 46em;
   }
 
   /*
-   * Printing Tables:
-   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
-   */
+		 * Printing Tables:
+		 * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+		 */
   thead {
     display: table-header-group;
   }
