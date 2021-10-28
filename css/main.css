@@ -209,6 +209,14 @@ img {
   box-shadow: 20px 15px 5px 5px #6e695e;
   margin-top: 2.5em;
 }
+.hero p a i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  font-size: 1.25em;
+  color: rgba(4, 15, 75, 0.966);
+}
 /*==Projects==*/
 #projects {
   display: flex;
@@ -604,7 +612,7 @@ footer .icons {
 }
 
 /* laptop screens */
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1200px) {
   .wrapper {
     max-width: 960px;
   }
@@ -625,6 +633,11 @@ footer .icons {
     margin-top: 13em;
     padding: 5em;
     width: 50vw;
+    line-height: 155%;
+  }
+  .hero p a i {
+    font-size: 1.5em;
+    margin-top: 1em;
   }
   .project-card img {
     margin-top: 5em;
