@@ -699,22 +699,6 @@ footer .icons {
   }
 }
 
-/* bigger screens */
-@media screen and (min-width: 1700px) {
-  header,.hero,#skills {
-    max-width: 1100px;
-  }
-  .topnav a.active {
-    margin-right: 33.9em;
-  }
-  .hero h1 {
-    margin-top: -16em;
-  }
-  .hero p {
-    margin-top: 20.5em;
-    margin-left: 14em;
-  }
-}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
